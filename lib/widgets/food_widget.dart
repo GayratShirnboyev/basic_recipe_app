@@ -19,7 +19,7 @@ class FoodWidget extends StatelessWidget {
             // print(food.name.toString());
             Navigator.push(context, MaterialPageRoute(builder: (context) {
               return FoodDetail(
-                name: food.name.toString(),
+                food: food,
               );
             }));
           }),
