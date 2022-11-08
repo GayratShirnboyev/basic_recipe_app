@@ -3,7 +3,9 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class FoodDetail extends StatelessWidget {
-  const FoodDetail({Key? key}) : super(key: key);
+  final String name;
+
+  const FoodDetail({Key? key, required this.name}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,7 @@ class FoodDetail extends StatelessWidget {
         title: Text('Food Detail'),
       ),
       body: Center(
-        child: Text('Food Detail'),
+        child: Text(name),
       ),
     );
   }

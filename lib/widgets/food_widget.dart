@@ -18,7 +18,9 @@ class FoodWidget extends StatelessWidget {
           onPressed: (() {
             // print(food.name.toString());
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return FoodDetail();
+              return FoodDetail(
+                name: food.name.toString(),
+              );
             }));
           }),
           icon: Icon(Icons.arrow_forward_ios_sharp)),
