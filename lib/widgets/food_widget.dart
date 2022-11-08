@@ -15,7 +15,8 @@ class FoodWidget extends StatelessWidget {
       title: Text(food.name.toString()),
       trailing: IconButton(
           onPressed: (() {
-            Navigator.pushNamed(context, 'burger');
+            // print(food.name.toString());
+            Navigator.pushNamed(context, food.name.toString());
           }),
           icon: Icon(Icons.arrow_forward_ios_sharp)),
       subtitle: Text("⏱ 5 min ⚪️ coin  ♨️kcal"),

@@ -1,3 +1,4 @@
 const String homePage = 'homePage';
 const String menuPage = 'menu';
-const String burgerPage = 'burger';
+const String burgerPage = 'Burger';
+const String chickenPage = 'Chicken';
