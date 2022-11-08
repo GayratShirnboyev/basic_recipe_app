@@ -1,6 +1,7 @@
 import 'package:basic_recipe_app/food.dart';
 
 import 'package:flutter/material.dart';
+import 'package:basic_recipe_app/screen/food_detail.dart';
 
 class FoodWidget extends StatelessWidget {
   final Food food;
@@ -16,7 +17,9 @@ class FoodWidget extends StatelessWidget {
       trailing: IconButton(
           onPressed: (() {
             // print(food.name.toString());
-            Navigator.pushNamed(context, food.name.toString());
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return FoodDetail();
+            }));
           }),
           icon: Icon(Icons.arrow_forward_ios_sharp)),
       subtitle: Text("⏱ 5 min ⚪️ coin  ♨️kcal"),
