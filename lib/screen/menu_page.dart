@@ -26,7 +26,7 @@ class MenuPage extends StatelessWidget {
             Navigator.pushNamed(context, homePage);
           },
         ),
-        title: Text('TITLE'),
+        title: Text('Menu page'),
       ),
       body: Container(
         child: ListView.separated(

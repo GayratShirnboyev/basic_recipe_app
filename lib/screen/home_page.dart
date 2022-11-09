@@ -6,13 +6,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
         backgroundColor: Color.fromARGB(255, 62, 199, 119),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundImage: AssetImage('images/vegtables.jpg'),
-              radius: 80,
+              radius: 140,
             ),
             Column(
               children: [
@@ -22,20 +23,24 @@ class HomePage extends StatelessWidget {
                 Container(
                     alignment: Alignment.center,
                     child: Text(
-                      'Food Ordering App',
+                      '\nFood Ordering App\n',
                       style: TextStyle(
                           fontWeight: FontWeight.w800,
-                          fontSize: 30,
+                          fontSize: 25,
                           color: Colors.white),
                     )),
                 SizedBox(
                   height: 40,
                 ),
-                ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, 'menu');
-                    },
-                    child: Text('Get a meal'))
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, 'menu');
+                  },
+                  child: Text(
+                    'Get a meal',
+                    style: TextStyle(fontSize: 40),
+                  ),
+                )
               ],
             )
           ],
